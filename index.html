@@ -9,7 +9,7 @@
     *{box-sizing:border-box;margin:0;padding:0;}
     body{min-height:100vh;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at top,#ff9a9e 0%,#fecfef 40%,#fbc2eb 70%,#a18cd1 100%);font-family:"Open Sans",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#fff;overflow:auto;}
     .card-container{position:relative;width:350px;max-width:90vw;text-align:center;z-index:2;}
-    .confetti{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:1;}
+    .confetti{position:fixed;inset:0;pointer-events:none;overflow:auto;z-index:1;}
     .confetti span{position:absolute;top:-10vh;font-size:16px;color:#ff3366;animation:fall 6s linear infinite;opacity:0.85;}
     .confetti span:nth-child(odd){color:#ff6b81;}
     .confetti span:nth-child(3n){color:#ffd1dc;}
@@ -28,11 +28,11 @@
     .letter .signature{margin-top:14px;font-style:italic;font-weight:600;}
     .hint{margin-top:10px;font-size:12px;opacity:0.9;}
     input#toggle{display:none;}
-    .hidden-message{max-height:0;opacity:0;overflow:hidden;transition:all .5s ease;margin-top:0;font-size:14px;line-height:1.5;}
+    .hidden-message{max-height:0;opacity:0;overflow:auto;transition:all .5s ease;margin-top:0;font-size:14px;line-height:1.5;}
     input#toggle:checked ~ .letter .hidden-message{max-height:200px;opacity:1;margin-top:10px;}
     .heart-label{display:inline-block;}
     .hidden-photo{
-  max-height:0;opacity:0;overflow:hidden;transition:all .6s ease;
+  max-height:0;opacity:0;overflow:auto;transition:all .6s ease;
   margin:10px auto 0 auto;width:300px;height:250px;border-radius:20px;
   box-shadow:0 15px 40px rgba(0,0,0,0.3);border:3px solid rgba(255,255,255,0.4);
 }
@@ -65,6 +65,7 @@ input#toggle:checked ~ .letter .hidden-photo{
   </div>
 </body>
 </html>
+
 
 
 
