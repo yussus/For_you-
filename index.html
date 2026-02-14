@@ -31,6 +31,16 @@
     .hidden-message{max-height:0;opacity:0;overflow:hidden;transition:all .5s ease;margin-top:0;font-size:14px;line-height:1.5;}
     input#toggle:checked ~ .letter .hidden-message{max-height:200px;opacity:1;margin-top:10px;}
     .heart-label{display:inline-block;}
+    .hidden-photo{
+  max-height:0;opacity:0;overflow:hidden;transition:all .6s ease;
+  margin:10px auto 0 auto;width:300px;height:250px;border-radius:20px;
+  box-shadow:0 15px 40px rgba(0,0,0,0.3);border:3px solid rgba(255,255,255,0.4);
+}
+.hidden-photo img{width:100%;height:100%;object-fit:cover;border-radius:18px;}
+input#toggle:checked ~ .letter .hidden-photo{
+  max-height:280px;opacity:1;margin-top:15px;
+}
+
     @media(max-width:480px){.heart{width:150px;height:135px;}.heart::before,.heart::after{width:150px;height:135px;}.letter h1{font-size:32px;}.letter p{font-size:14px;}}
   </style>
 </head>
@@ -55,6 +65,7 @@
   </div>
 </body>
 </html>
+
 
 
 
